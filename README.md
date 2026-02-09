@@ -11,6 +11,8 @@ saved sessions is supported. Just make sure `config.session_dir =
 {your-saved-sessions-directory}` so it is set to your prefered directory to
 store your sessions.
 
+## Installation
+
 Install with [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 Add this in your init.lua or plugins.lua:
@@ -23,6 +25,7 @@ Add this in your init.lua or plugins.lua:
   end
 }
 ```
+## Usage
 
 Below are the plugin properties defaults `config`. You can override the
 configuration by changing the properties inside the setup function.

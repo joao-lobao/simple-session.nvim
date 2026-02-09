@@ -32,6 +32,7 @@ configuration by changing the properties inside the setup function.
   "joao-lobao/simple-session",
   config = function()
     require("simple-session").setup({
+        -- default configurations
         session_dir = vim.fn.stdpath("config") .. "/session/",
         save_session_on_exit = true,
         keymaps = {

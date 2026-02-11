@@ -1,4 +1,4 @@
-# simple-session.nvim
+# simplesession.nvim
 
 A simple and easy to use Neovim plugin to manage sessions:
 
@@ -19,12 +19,13 @@ Add this in your init.lua or plugins.lua:
 
 ```lua
 {
-  "joao-lobao/simple-session.nvim",
+  "joao-lobao/simplesession.nvim",
   config = function()
-    require("simple-session").setup()
+    require("simplesession").setup()
   end
 }
 ```
+
 ## Usage
 
 Below are the plugin properties defaults `config`. You can override the
@@ -32,9 +33,9 @@ configuration by changing the properties inside the setup function.
 
 ```lua
 {
-  "joao-lobao/simple-session.nvim",
+  "joao-lobao/simplesession.nvim",
   config = function()
-    require("simple-session").setup({
+    require("simplesession").setup({
         -- default configurations
         session_dir = vim.fn.stdpath("config") .. "/session/",
         save_session_on_exit = true,

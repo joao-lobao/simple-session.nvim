@@ -54,6 +54,9 @@ function M.load()
 	end
 
 	save()
+	-- stop lsp to prevent previous running clients warning about unexpected
+	-- buffer detach. When new session is loaded, it will be restarted
+	vim.lsp.stop_client(vim.lsp.get_clients())
 	vim.cmd("bufdo bw")
 	vim.cmd("source " .. M.config.session_dir .. session)
 end
